@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bassco Jewelry</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/main-page.css">
+    <link rel="stylesheet" href="../style/catalogue.css">
+</head>
+
+<body>
+    <header class="header">
+        <!--Шапка с навигацией-->
+        <div class="container">
+            <div class="header__upper">
+                <a href="../index.html"><img src="../img/logo.svg" alt="Логотип"></a>
+                <div class="header__upper-contacts">
+                    <a href="asd">
+                        <span>8 800 111-11-11</span><br>
+                        Заказать звонок
+                    </a>
+                    <a href="asd">
+                        <span>info@bassco.ru</span><br>
+                        По любым вопросам
+                    </a>
+                    <button class="header__upper-contacts__button button__yellow">
+                        СОТРУДНИЧЕСТВО
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <div class="container">
+                <div class="header__nav-container">
+                    <div class="header__nav-container__links">
+                        <a href="../index.html">Главная</a>
+                        <a href="catalogue.html">Каталог</a>
+                        <a href="about.html">О компании</a>
+                    </div>
+                    <button class="header__nav-container__links-buy">
+                        В корзине 2 товара
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="catalogue"> <!-- Каталог товаров -->
+            <div class="container">
+                <div class="catalogue__sort">
+                    <div class="catalogue__sort-nav">
+                        <a href="../index.html">Главная</a>
+                        <span>-----</span>
+                        <a href="catalogue.html">Каталог</a>
+                        <h1>каталог</h1>
+                    </div>
+                    <div class="catalogue__sort-options">
+                        <label for="sort">Сортировать:</label>
+                        <select name="sort" id="">
+                            <option value="articul">По артикулу</option>
+                            <option value="cheaper">Сначала дешевле</option>
+                            <option value="moreexpensive">Сначала дороже</option>
+                            <option value="newer">Сначала новее</option>
+                            <option value="older">Сначала старые</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="catalogue__main">
+                    <div class="catalogue__main-filter">
+                        <ul class="filter__checklist">
+                            <li>
+                                <div class="filter__checklist-main">
+                                    <h2>фильтр</h2>
+                                    <input type="checkbox" name="available">
+                                    <label for="available">В наличии</label><br>
+                                    <input type="checkbox" name="new">
+                                    <label for="new">Новинки</label><br>
+                                    <input type="checkbox" name="sale">
+                                    <label for="sale">Акции/Скидки</label><br>
+                                    <input type="checkbox" name="bestseller">
+                                    <label for="bestseller">Хит продаж</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filter__checklist-types">
+                                    <h2>Виды украшений</h2>
+                                    <details>
+                                        <summary>Кольца</summary>
+                                        <input type="checkbox" name="classic-ring">
+                                        <label for="classic-ring">Классические</label><br>
+                                        <input type="checkbox" name="wedding-ring">
+                                        <label for="wedding-ring">Обручальные</label><br>
+                                        <input type="checkbox" name="pe4atok-ring">
+                                        <label for="pe4atok-ring">Печатки</label>
+                                    </details>
+                                    <input type="checkbox" name="earrings">
+                                    <label for="earrings">Серьги</label><br>
+                                    <input type="checkbox" name="bracelettes">
+                                    <label for="bracelettes">Браслеты</label><br>
+                                    <input type="checkbox" name="necklaces">
+                                    <label for="necklaces">Подвески</label><br>
+                                    <input type="checkbox" name="crosses">
+                                    <label for="crosses">Кресты</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filter__checklist-main">
+                                    <h2>металл</h2>
+                                    <input type="checkbox" name="white">
+                                    <label for="white">Белое золото</label><br>
+                                    <input type="checkbox" name="red">
+                                    <label for="red">Красное золото</label><br>
+                                    <input type="checkbox" name="yellow">
+                                    <label for="yellow">Жёлтое золото</label><br>
+                                    <input type="checkbox" name="silver">
+                                    <label for="silver">Серебро</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filter__checklist-main">
+                                    <h2>вставка</h2>
+                                    <input type="checkbox" name="withvstavka">
+                                    <label for="withvstavka">Со вставками</label><br>
+                                    <input type="checkbox" name="withoutvstavka">
+                                    <label for="withoutvstavka">Без вставок</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filter__checklist-cost">
+                                    <h2>Стоимость</h2>
+                                    <div class="cost__minmax">
+                                        <input type="text" placeholder="200">
+                                        <input type="text" placeholder="5900">
+                                    </div>
+                                </div>
+                            </li>
+                            <a href="catalogue.html" class="button__yellow">ПРИМЕНИТЬ ФИЛЬТРЫ</a>
+                        </ul>
+                    </div>
+                    <div class="catalogue__main-list">
+                        <div class="catalogue__main-list__jewelry jewelry__item">
+                            <span>Новинка!</span>
+                            <button>
+                                <img src="../img/like.svg" alt="Like icon">
+                                <img src="../img/like-pressed.svg" alt="Like icon">
+                            </button>
+                            <img src="../img/ring1.png" alt="Ring photo">
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <span>Кольцо из белого золота с бриллиантами</span>
+                            <span>5 990 ₽</span>
+                        </div>
+                        <div class="catalogue__main-list__jewelry jewelry__item">
+                            <span>Новинка!</span>
+                            <button>
+                                <img src="../img/like.svg" alt="Like icon">
+                                <img src="../img/like-pressed.svg" alt="Like icon">
+                            </button>
+                            <img src="../img/ring1.png" alt="Ring photo">
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <span>Кольцо из белого золота с бриллиантами</span>
+                            <span>5 990 ₽</span>
+                        </div>
+                        <div class="catalogue__main-list__jewelry jewelry__item">
+                            <span>Новинка!</span>
+                            <button>
+                                <img src="../img/like.svg" alt="Like icon">
+                                <img src="../img/like-pressed.svg" alt="Like icon">
+                            </button>
+                            <img src="../img/ring1.png" alt="Ring photo">
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <span>Кольцо из белого золота с бриллиантами</span>
+                            <span>5 990 ₽</span>
+                        </div>
+                        <div class="catalogue__main-list__jewelry jewelry__item">
+                            <span>Новинка!</span>
+                            <button>
+                                <img src="../img/like.svg" alt="Like icon">
+                                <img src="../img/like-pressed.svg" alt="Like icon">
+                            </button>
+                            <img src="../img/ring1.png" alt="Ring photo">
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <span>Кольцо из белого золота с бриллиантами</span>
+                            <span>5 990 ₽</span>
+                        </div>
+                        <div class="catalogue__main-list__jewelry jewelry__item">
+                            <span>Новинка!</span>
+                            <button>
+                                <img src="../img/like.svg" alt="Like icon">
+                                <img src="../img/like-pressed.svg" alt="Like icon">
+                            </button>
+                            <img src="../img/ring1.png" alt="Ring photo">
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <span>Кольцо из белого золота с бриллиантами</span>
+                            <span>5 990 ₽</span>
+                        </div>
+                        <div class="catalogue__main-list__jewelry jewelry__item">
+                            <span>Новинка!</span>
+                            <button>
+                                <img src="../img/like.svg" alt="Like icon">
+                                <img src="../img/like-pressed.svg" alt="Like icon">
+                            </button>
+                            <img src="../img/ring1.png" alt="Ring photo">
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <span>Кольцо из белого золота с бриллиантами</span>
+                            <span>5 990 ₽</span>
+                        </div>
+                        <div class="catalogue__main-list__jewelry jewelry__item">
+                            <span>Новинка!</span>
+                            <button>
+                                <img src="../img/like.svg" alt="Like icon">
+                                <img src="../img/like-pressed.svg" alt="Like icon">
+                            </button>
+                            <img src="../img/ring1.png" alt="Ring photo">
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <span>Кольцо из белого золота с бриллиантами</span>
+                            <span>5 990 ₽</span>
+                        </div>
+                        <div class="catalogue__main-list__jewelry jewelry__item">
+                            <span>Новинка!</span>
+                            <button>
+                                <img src="../img/like.svg" alt="Like icon">
+                                <img src="../img/like-pressed.svg" alt="Like icon">
+                            </button>
+                            <img src="../img/ring1.png" alt="Ring photo">
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <span>Кольцо из белого золота с бриллиантами</span>
+                            <span>5 990 ₽</span>
+                        </div>
+                        <div class="catalogue__main-list__jewelry jewelry__item">
+                            <span>Новинка!</span>
+                            <button>
+                                <img src="../img/like.svg" alt="Like icon">
+                                <img src="../img/like-pressed.svg" alt="Like icon">
+                            </button>
+                            <img src="../img/ring1.png" alt="Ring photo">
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <span>Кольцо из белого золота с бриллиантами</span>
+                            <span>5 990 ₽</span>
+                        </div>
+                        <div class="catalogue__main-list__jewelry jewelry__item">
+                            <span>Новинка!</span>
+                            <button>
+                                <img src="../img/like.svg" alt="Like icon">
+                                <img src="../img/like-pressed.svg" alt="Like icon">
+                            </button>
+                            <img src="../img/ring1.png" alt="Ring photo">
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <span>Кольцо из белого золота с бриллиантами</span>
+                            <span>5 990 ₽</span>
+                        </div>
+                        <div class="catalogue__main-list__jewelry jewelry__item">
+                            <span>Новинка!</span>
+                            <button>
+                                <img src="../img/like.svg" alt="Like icon">
+                                <img src="../img/like-pressed.svg" alt="Like icon">
+                            </button>
+                            <img src="../img/ring1.png" alt="Ring photo">
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <span>Кольцо из белого золота с бриллиантами</span>
+                            <span>5 990 ₽</span>
+                        </div>
+                        <div class="catalogue__main-list__jewelry jewelry__item">
+                            <span>Новинка!</span>
+                            <button>
+                                <img src="../img/like.svg" alt="Like icon">
+                                <img src="../img/like-pressed.svg" alt="Like icon">
+                            </button>
+                            <img src="../img/ring1.png" alt="Ring photo">
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <button class="jewelry__item-button button__photo"></button>
+                            <span>Кольцо из белого золота с бриллиантами</span>
+                            <span>5 990 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogue__pages">
+                    <div class="catalogue__pages-items">
+                        <a href="catalogue.html">1</a>
+                        <a href="catalogue.html">2</a>
+                        <a href="catalogue.html">3</a>
+                        <span>...</span>
+                        <a href="catalogue.html">22</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="upper-footer">
+                <img src="../img/logo.svg" alt="">
+                <div class="upper-footer__nav">
+                    <nav>
+                        <a href="../index.html">ГЛАВНАЯ</a>
+                        <a href="catalogue.html">КАТАЛОГ</a>
+                        <a href="about.html">О КОМПАНИИ</a>
+                    </nav>
+                    <div class="upper-footer__nav__number">
+                        <span>8-800-800-800</span>
+                        <p>с 9:00 - до 18:00</p>
+                    </div>
+                    <button class="button__yellow">РЕГИСТРАЦИЯ</button>
+                </div>
+            </div>
+            <div class="under-footer">
+                <span>© Bassco 2022</span>
+                <a href="asd">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
