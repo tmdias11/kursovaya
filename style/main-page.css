@@ -184,7 +184,7 @@ main section:nth-child(1) {
         height: 80%;
         padding: 5px;
         font-size: 8px;
-        
+       margin-top: 15px;
     }
 
     .button__yellow:first-of-type{
@@ -201,6 +201,14 @@ main section:nth-child(1) {
     .header__nav-container__links-buy::before {
         content: url(../img/cart.svg);
         margin: 5px;
+    }
+    
+    .header__upper-contacts a span{
+        display: none;
+    }
+
+    .header__upper-contacts{
+        padding-bottom: 10px;
     }
 }
 
