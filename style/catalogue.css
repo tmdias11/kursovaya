@@ -157,6 +157,10 @@ details {
     text-decoration: none;
 }
 
+.catalogue__main-list__jewelry span:nth-of-type(2), span:nth-of-type(3){
+    color: #30343D;
+}
+
 @media screen and (max-width:430px) {
     .catalogue__sort-nav{
         margin-left: 15px;
