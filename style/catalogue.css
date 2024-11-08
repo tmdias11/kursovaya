@@ -156,3 +156,73 @@ details {
 .button__yellow{
     text-decoration: none;
 }
+
+@media screen and (max-width:430px) {
+    .catalogue__sort-nav{
+        margin-left: 15px;
+    }
+    
+    h1{
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .filter__checklist-main{
+        font-size: 11px;
+    }
+
+    .filter__checklist-main h2{
+        font-size: 15px;
+    }
+
+    .catalogue__main-filter{
+        width: 150px;
+        height: 1000px;
+        padding: 10px;
+    }
+
+    input[type=checkbox]{
+        width: 13px;
+        height: 13px;
+    }
+
+    .filter__checklist-types h2 {
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    .filter__checklist-cost h2{
+        font-size: 15px;
+    }
+
+    .button__yellow{
+        display: block;
+        text-align: center;
+    }
+
+    .catalogue__main {
+        gap: 20px;
+    }
+
+    .catalogue__main-list__jewelry {
+        width: 90%;
+    }
+
+    .catalogue__main-list__jewelry span:nth-of-type(2), span:nth-of-type(3){
+        color: #30343D;
+    }
+
+    .catalogue__main{
+        padding-left: 25px;
+    }
+
+    .catalogue__main-list{
+        gap: 15px;
+    }
+
+    .cost__minmax input {
+        height: 30px;
+        padding: 5px;
+        box-sizing: unset;
+    }
+}
