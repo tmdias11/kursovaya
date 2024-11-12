@@ -131,6 +131,10 @@ details {
     max-height: 30px;
 }
 
+.catalogue__main-list__jewelry span:nth-of-type(2), span:nth-of-type(3){
+    color: #30343D;
+}
+
 .catalogue__pages-items{
     display: flex;
     gap: 20px;
@@ -220,10 +224,6 @@ details {
 
     .catalogue__main-list__jewelry {
         width: 90%;
-    }
-
-    .catalogue__main-list__jewelry span:nth-of-type(2), span:nth-of-type(3){
-        color: #30343D;
     }
 
     .catalogue__main{
