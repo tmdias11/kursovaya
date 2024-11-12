@@ -161,6 +161,16 @@ details {
     color: #30343D;
 }
 
+@media screen and (min-width:431px) and (max-width:1024px){
+    .catalogue__main {
+        grid-template-rows: 0.4fr 0.8fr;
+    }
+
+    .catalogue{
+        padding: 0px 15px;
+    }
+}
+
 @media screen and (max-width:430px) {
     .catalogue__sort-nav{
         margin-left: 15px;
